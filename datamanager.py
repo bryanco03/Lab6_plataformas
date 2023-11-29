@@ -11,7 +11,7 @@ class RealTimeDataManager:
         while True:
             time.sleep(3)
             self.generate_real_time_data()
-            self.event_manager.notify("datos", data=self.data.copy())
+            self.event_manager.notify("datos", data=self.data)
 
             
 
